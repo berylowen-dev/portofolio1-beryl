@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio Beryl Owen Devkana</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+    }
+
+    body {
+      background: linear-gradient(135deg, #000000 0%, #1e3c72 50%, #4a148c 100%);
+      color: #f5f5f5;
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 280px;
+      background: linear-gradient(135deg, #000000 0%, #3f51b5 50%, #673ab7 100%);
+      padding: 30px 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-right: 3px solid #9c27b0;
+    }
+
+    .sidebar .profile-pic {
+      width: 140px;
+      height: 140px;
+      background: url('img.png') no-repeat center center/cover;
+      border-radius: 50%;
+      border: 4px solid #9c27b0;
+      margin-bottom: 20px;
+    }
+
+    .sidebar h1 {
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #e1bee7;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+
+    .sidebar p {
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 0.95rem;
+      color: #c8d0e7ea;
+    }
+
+    .nav-menu {
+      width: 100%;
+    }
+
+    .nav-menu a {
+      display: block;
+      text-decoration: none;
+      color: #aab8d3;
+      padding: 12px 20px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .nav-menu a:hover {
+      background: linear-gradient(135deg, #000000 0%, #9c27b0 100%);
+      color: #fff;
+     
+       box-shadow:0 15px 20px black;
+    }
+
+    /* Main content */
+    .content {
+      flex: 1;
+      padding: 45px 60px;
+      overflow-y: auto;
+      scroll-behavior: smooth;
+     
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    section h2 {
+      font-size: 2.3rem;
+      font-weight: 700;
+      color: #9c27b0;
+      border-bottom: 4px solid #9c27b0;
+      display: inline-block;
+      padding-bottom: 6px;
+      margin-bottom: 25px;
+       
+    }
+
+    p, li {
+      font-size: 1.15rem;
+      line-height: 1.6;
+      color: #dce3f0;
+       
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    ul li {
+      background: linear-gradient(135deg, #000000 0%, #3f51b5 50%, #673ab7 100%);
+      margin-bottom: 12px;
+      border-radius: 10px;
+      padding: 15px 20px;
+      box-shadow: inset 0 0 8px #9c27b055;
+            
+    }
+    ul li:hover {
+      background: linear-gradient(135deg, #000000 0%, #9c27b0 100%);
+      cursor: default;
+      box-shadow:0 15px 20px black;
+      transition: background-color  0.3s ease;
+    }
+    /* Definition list style for key-value data */
+    dl {
+      background: linear-gradient(135deg, #000000 0%, #3f51b5 50%, #673ab7 100%);
+      padding: 20px 30px;
+      border-radius: 15px;
+      box-shadow: inset 0 0 12px #9c27b077;
+      max-width: 800px;
+       box-shadow:0 15px 20px black;
+    }
+    dt {
+      font-weight: 700;
+      color: #e1bee7;
+      margin-top: 15px;
+      font-size: 1.1rem;
+    }
+    dd {
+      margin-left: 20px;
+      margin-bottom: 10px;
+      color: #dce3f0ce;
+      font-size: 1rem;
+    }
+
+    /* Scrollbar custom for content */
+    .content::-webkit-scrollbar {
+      width: 12px;
+    }
+    .content::-webkit-scrollbar-thumb {
+      background: linear-gradient(135deg, #000000 0%, #9c27b0 100%);
+      border-radius: 20px;
+    }
+    .content::-webkit-scrollbar-track {
+      background: linear-gradient(135deg, #000000 0%, #1e3c72 100%);
+    }
+
+    /* Responsive for smaller screen */
+    @media (max-width: 900px) {
+      body {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+        flex-direction: row;
+        padding: 15px;
+        border-right: none;
+        border-bottom: 3px solid #9c27b0;
+        justify-content: space-around;
+      }
+      .sidebar .profile-pic {
+        display: none;
+      }
+      .sidebar h1, .sidebar p {
+        display: none;
+      }
+      .nav-menu {
+        width: auto;
+        display: flex;
+        gap: 15px;
+      }
+      .nav-menu a {
+        padding: 10px 15px;
+        font-size: 1rem;
+      }
+      .content {
+        padding: 25px 20px;
+        height: auto;
+      }
+      section h2 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="profile-pic" aria-label="Foto Profil"></div>
+    <h1>Beryl Owen Devkana</h1>
+    <p>Pelajar SMKN 2 Trenggalek - Jurusan RPL</p>
+    <nav class="nav-menu" role="navigation" aria-label="Navigasi Portofolio">
+      <a href="#profil" class="active">Profil</a>
+      <a href="#pendidikan">Pendidikan</a>
+      <a href="#keluarga">Keluarga</a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <section id="profil" tabindex="0">
+      <h2>Profil</h2>
+      <dl>
+        <dt>Nama Lengkap</dt>
+        <dd>Beryl Owen Devkana</dd>
+        <dt>Tempat & Tanggal Lahir</dt>
+        <dd> Trenggalek, 15 Mei 2009</dd>
+        <dt>Alamat</dt>
+        <dd>Desa Prigi, Dsn gendingan RT 12/RW 4, Kec. Watulimo, Kab. Trenggalek</dd>
+        <dt>Sekolah Saat Ini</dt>
+        <dd>SMKN 2 Trenggalek, Jurusan Rekayasa Perangkat Lunak (RPL)</dd>
+      </dl>
+    </section>
+      <br><br>
+    <section id="pendidikan" tabindex="0">
+      <h2>Pendidikan</h2>
+      <ul>
+        <li><a href="https://daftarsekolah.net/sekolah/357086/tk-pertiwi-prigi">TK Pertiwi Prigi</a></li>
+        <li><a href="https://minsatutrenggalek.sch.id/">MIN 1 Trenggalek</a></li>
+        <li><a href="https://www.mtsnegeri4trenggalek.sch.id/">MTSN 4 Trenggalek</a></li>
+        <li><a href="https://smkn2trenggalek.sch.id/">SMKN 2 Trenggalek - Jurusan RPL</a></li>
+      </ul>
+    </section>
+      <br><br>
+    <section id="keluarga" tabindex="0">
+      <h2>Data Keluarga</h2>
+      <dl>
+        <dt>Nama Orang Tua</dt>
+        <dd> IBU : Devi Budi Widyandari</dd>
+        <dd> AYAH : Edy Subekana</dd>
+        <dt>Nama Saudara</dt>
+        <dd> SAUDARA : Javier Zaviokan Devkana</dd>
+      </dl>
+    </section>
+  </main>
+
+  <script>
+    // Simple active nav link switch when scrolling or clicking
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-menu a');
+
+    function activateLink() {
+      let len = sections.length;
+      while(--len && window.scrollY + 100 < sections[len].offsetTop) {}
+      navLinks.forEach(link => link.classList.remove('active'));
+      navLinks[len].classList.add('active');
+    }
+
+    window.addEventListener('scroll', activateLink);
+
+    // Smooth scroll when clicking links
+    navLinks.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(link.hash).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
